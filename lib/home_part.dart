@@ -9,10 +9,8 @@ class HomePage extends StatelessWidget {
     return Center(
         child: ElevatedButton(
       onPressed: () {
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (BuildContext context) {
-          return const LearnFlutterPage();
-        }));
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (BuildContext context) => const LearnFlutterPage()));
       },
       child: const Text('Learn Flutter'),
     ));
